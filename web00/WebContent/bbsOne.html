@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: lightblue;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 {
+	color: green;
+}
+
+#b2 {
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<h3>게시물 검색(하나) 페이지</h3>
+	<hr>
+	<a href="bbs.html">
+		<button id="b1">게시판 정보 페이지</button>
+	</a>
+	<hr>
+	<a href="http://localhost:8888/web00/bbsOne.jsp?no=1">
+		<button style="background: pink">1번 게시물</button>
+	</a>
+	<!-- 	form의 action은 무조건 jsp 파일!! -->
+	<form action="bbsOne.jsp">
+		<table border="1">
+			<tr>
+				<td class="t1">번호 :</td>
+				<td><input name="no"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<button id="b2">게시물 검색(하나) 데이터 전송</button>
+				</td>
+			</tr>
+
+		</table>
+
+
+	</form>
+	<a href="http://localhost:8888/web00/bbsOne.jsp?no=1">
+		<button style="background: pink">1번 게시물</button>
+	</a>
+	<!-- http://localhost:8888/web00/insert.jsp?id=asdf&pw=asdf&name=asdf&tel=asdf -->
+
+</body>
+</html>

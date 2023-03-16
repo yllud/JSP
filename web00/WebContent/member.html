@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>member</title>
+<!-- <script type="text/javascript"> -->
+<!--  	alert('회원정보 페이지입니다. 반갑습니다.!') -->
+<!-- </script> -->
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: #18de02;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<h3>회원정보 페이지</h3>
+	<hr>
+	<a href="index.html">
+		<button>목차 페이지</button>
+	</a>
+	<table border="1">
+		<tr>
+			<td class="t1">회원가입</td>
+			<td><a href="memberInsert.html">
+					<button>GO!!</button>
+			</a></td>
+		</tr>
+		<tr>
+			<td class="t1">회원탈퇴</td>
+			<td><a href="memberDelete.html">
+					<button>GO!!</button>
+			</a></td>
+		</tr>
+		<tr>
+			<td class="t1">회원수정</td>
+			<td><a href="memberUpdate.html">
+					<button>GO!!</button>
+			</a></td>
+		</tr>
+		<tr>
+			<td class="t1">회원검색(한명)</td>
+			<td><a href="memberOne.html">
+					<button>GO!!</button>
+			</a></td>
+		</tr>
+		<tr>
+			<td class="t1">회원전체목록(여러명)</td>
+			<td><form action="memberList.jsp">
+					<button>GO!!</button>
+				</form></td>
+		</tr>
+	</table>
+</body>
+</html>

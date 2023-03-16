@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>memberOne</title>
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: #18de02;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 {
+	color: green;
+}
+
+#b2 {
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<h3>회원검색 페이지</h3>
+	<hr>
+	<a href="member.html">
+		<button id="b1">회원정보 페이지</button>
+	</a>
+	<hr>
+	
+	<a href="http://localhost:8888/web00/memberOne.jsp?id=apple1">
+	<button>apple1</button>
+	</a>
+	<a href="http://localhost:8888/web00/memberOne.jsp?id=apple2">
+	<button>apple2</button>
+	</a>
+	<a href="http://localhost:8888/web00/memberOne.jsp?id=apple3">
+	<button>apple3</button>
+	</a>
+	<hr>
+	
+	<!-- 	form의 action은 무조건 jsp 파일!! -->
+	<form action="memberOne.jsp">
+		<table border="1">
+			<tr>
+				<td class="t1">아이디 :</td>
+				<td><input name="id"></td>
+			</tr>
+			<tr>
+
+			<tr>
+				<td colspan="2">
+					<button id="b2">회원검색 데이터 전송</button>
+				</td>
+			</tr>
+		</table>
+
+
+	</form>
+	
+		
+	<!-- http://localhost:8888/web00/insert.jsp?id=asdf&pw=asdf&name=asdf&tel=asdf -->
+
+</body>
+</html>

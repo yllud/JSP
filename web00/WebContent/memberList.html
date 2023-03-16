@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: #18de02;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 {
+	color: green;
+}
+
+#b2 {
+	color: blue;
+}
+</style>
+
+</head>
+<body>
+	<h3>전체 회원 검색 페이지</h3>
+	<hr>
+	<a href="member.html">
+		<button id="b1">회원정보(전체) 페이지</button>
+	</a>
+	<!-- 	form의 action은 무조건 jsp 파일!! -->
+	<form action="memberList.jsp">
+		<button id="b2">회원 검색(전체) 데이터 전송</button>
+	</form>
+<!-- 	전해줄게 없음 form 필요없긴함 -->
+	<!-- http://localhost:8888/web00/insert.jsp?id=asdf&pw=asdf&name=asdf&tel=asdf -->
+
+</body>
+</html>

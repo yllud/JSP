@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: #18de02;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 {
+	color: green;
+}
+
+#b2 {
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<h3>회원수정 페이지</h3>
+	<hr>
+	<a href="member.html">
+		<button id="b1">회원정보 페이지</button>
+	</a>
+	<!-- 	form의 action은 무조건 jsp 파일!! -->
+	<form action="memberUpdate.jsp">
+		<table border="1">
+			<tr>
+				<td class="t1">아이디 :</td>
+				<td><input name="id"></td>
+			</tr>
+			<tr>
+				<td class="t1">회원전화 :</td>
+				<td><input name="tel"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<button id="b2">회원수정 데이터 전송</button>
+				</td>
+			</tr>
+		</table>
+
+
+	</form>
+	<!-- http://localhost:8888/web00/insert.jsp?id=asdf&pw=asdf&name=asdf&tel=asdf -->
+
+</body>
+</html>

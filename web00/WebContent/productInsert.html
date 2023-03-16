@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: gray;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 {
+	color: green;
+}
+
+#b2 {
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<h3>상품 업로드 페이지</h3>
+	<hr>
+	<a href="product.html">
+		<button id="b1">상품 첫 화면</button>
+	</a>
+
+	<form action="productInsert.jsp">
+		<table border="1">
+			<tr>
+				<td class="t1">아이디 :</td>
+				<td><input name="id"></td>
+			</tr>
+			<tr>
+				<td class="t1">이름 :</td>
+				<td><input name="name"></td>
+			</tr>
+			<tr>
+				<td class="t1">내용 :</td>
+				<td><input name="content"></td>
+			</tr>
+			<tr>
+				<td class="t1">가격 :</td>
+				<td><input name="price"></td>
+			</tr>
+			<tr>
+				<td class="t1">회사 :</td>
+				<td><input name="company"></td>
+			</tr>
+			<tr>
+				<td class="t1">이미지 :</td>
+				<td><input name="img"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<button id="b2">상품 데이터 전송</button>
+				</td>
+			</tr>
+		</table>
+
+
+	</form>
+	<!-- http://localhost:8888/web00/insert.jsp?id=asdf&pw=asdf&name=asdf&tel=asdf -->
+
+</body>
+</html>
