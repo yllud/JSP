@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: aqua;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 {
+	color: green;
+}
+
+#b2 {
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<h3>노래추가 페이지</h3>
+	<hr>
+	<a href="Song.html">
+		<button id="b1">플레이리스트 첫 페이지</button>
+	</a>
+	<!-- 	form의 action은 무조건 jsp 파일!! -->
+	<form action="songInsert.jsp">
+		<table border="1">
+			<tr>
+				<td class="t1">아이디 :</td>
+				<td><input name="id"></td>
+			</tr>
+			<tr>
+				<td class="t1">제목 :</td>
+				<td><input name="title"></td>
+			</tr>
+			<tr>
+				<td class="t1">가수 :</td>
+				<td><input name="artist"></td>
+			</tr>
+			<tr>
+				<td class="t1">장르 :</td>
+				<td><input name="genre"></td>
+			</tr>
+			<tr>
+				<td class="t1">이미지 :</td>
+				<td><input name="img"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<button id="b2">노래 추가</button>
+				</td>
+			</tr>
+		</table>
+
+
+	</form>
+	<!-- http://localhost:8888/web00/insert.jsp?id=asdf&pw=asdf&name=asdf&tel=asdf -->
+
+</body>
+</html>
