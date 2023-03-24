@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="css/out.css">
+<!-- css -->
+<style type="text/css">
+* {
+	color: red; /* 모든 글자색은 빨강색 */
+}
+</style>
+
+
+
+<!-- javaScript -->
+<script type="text/javascript">
+	function me() {
+		name = document.getElementById("name").value
+		com = document.getElementById("company").value
+		pos = document.getElementById("position").value
+		gender = document.getElementById("gender").value
+
+		//<div> tag : html의 주요 구성요소(element --> tag))
+		resultTag = document.getElementById("result")
+		//id가 result인 태그를 가지고 와주세요.!<div id=result></div>
+		if (gender== '남자') {
+			resultTag.innerHTML = com+'회사에 '+pos+'으로 있는 '+name+'입니다.<br> <img src=img/yes.jpeg width=300 height=200>'
+		}
+		else{
+			resultTag.innerHTML = com+'회사에 '+pos+'으로 있는 '+name+'입니다.<br> <img src=img/no.png width=300 height=200>'
+		}
+	}
+
+
+</script>
+
+</head>
+<body>
+	이름 :<input id="name"><br> 
+	회사 :<input id="company"><br> 	
+	직책 :<input id="position"><br> 
+	성별 :<input id="gender"><br>
+	
+	
+	<button onclick="me()">확인</button><br>
+	
+
+
+
+	<hr color="red">
+	<div id="result"
+		style="color: red; background: yellow; width: 500px; height: 50px; font-size: 30px">결과넣는
+		곳.</div>
+</body>
+</html>

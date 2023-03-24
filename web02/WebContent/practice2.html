@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="css/out.css">
+<!-- css -->
+<style type="text/css">
+* {
+	color: red; /* 모든 글자색은 빨강색 */
+}
+</style>
+
+
+
+<!-- javaScript -->
+<script type="text/javascript">
+	function bag() {
+		first = document.getElementById("first").value
+		//<div> tag : html의 주요 구성요소(element --> tag))
+		resultTag = document.getElementById("result")
+		//id가 result인 태그를 가지고 와주세요.!<div id=result></div>
+		
+		
+		if (first== '휴대폰') {
+			resultTag.innerHTML ='<img src=img/yes.jpeg width=300 height=200>'
+		}
+		else if(first== '시계') {
+			resultTag.innerHTML ='<img src=img/no.png width=300 height=200>'
+		}
+		else{
+			resultTag.innerHTML ='<img src=img/yes.jpeg width=300 height=200>'	
+		}
+	}
+	
+	
+	function bag2() {
+		second = document.getElementById("second").value
+		//<div> tag : html의 주요 구성요소(element --> tag))
+		resultTag = document.getElementById("result")
+		//id가 result인 태그를 가지고 와주세요.!<div id=result></div>
+		
+		
+		if (second== '휴대폰') {
+			resultTag.innerHTML ='<img src=img/yes.jpeg width=300 height=200>'
+		}
+		else if(second== '시계') {
+			resultTag.innerHTML ='<img src=img/no.png width=300 height=200>'
+		}
+		else{
+			resultTag.innerHTML ='<img src=img/yes.jpeg width=300 height=200>'	
+		}
+	}
+		
+
+
+</script>
+
+</head>
+<body>
+	첫번째로 가장 중요한 물건 :<input id="first">
+	<button onclick="bag()">확인</button>
+	<br>
+	두번째로 가장 중요한 물건 :<input id="second">
+	<button onclick="bag2()">확인</button>
+	<br>
+
+	<hr color="red">
+	<div id="result"
+		style="color: red; background: yellow; width: 500px; height: 50px; font-size: 30px">결과넣는
+		곳.</div>
+</body>
+</html>

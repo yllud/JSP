@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+<script type="text/javascript">
+	//시작하자 마자 통신해보자.!!s
+	$(function() {
+		$('#b1').click(function() {
+			$.ajax({
+				url:"ok.html",
+				success: function(x) {
+					alert(x)
+					$('#result').append(x+"<br>")
+				}//success
+			})//ajax
+		})//b1
+		
+		
+		$('#b2').click(function() {
+			$.ajax({
+				url:"tour.html",
+				success: function(x) {
+					alert(x)
+					$('#result').append(x+"<br>")
+				}//success
+			})
+		})
+		
+		
+		$('#b3').click(function() {
+			$.ajax({
+				url:"weather.html",
+				success: function(x) {
+					alert(x)
+					$('#result').append(x+'<br>')
+				}
+			})
+		})
+
+		
+	})
+</script>
+</head>
+<body>
+<button id="b1">ok 사이트 연결 요청</button>
+<button id="b2">tour 사이트 연결 요청</button>
+<button id="b3">weather 사이트 연결 요청</button>
+<hr color="red">
+<div id="result"></div>
+</body>
+</html>

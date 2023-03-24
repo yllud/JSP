@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="css/out.css">
+<!-- css -->
+<style type="text/css">
+* {
+	color: red; /* 모든 글자색은 빨강색 */
+}
+</style>
+
+
+
+<!-- javaScript -->
+<script type="text/javascript">
+	function idCheck() {
+		id = document.getElementById("user").value
+
+		//<div> tag : html의 주요 구성요소(element --> tag))
+		resultTag = document.getElementById("result")
+		//id가 result인 태그를 가지고 와주세요.!<div id=result></div>
+		if (id.length < 5) {
+			resultTag.innerHTML = '아이디는 5글자 이상이어야 합니다!<br> <img src=img/no.png width=300 height=200>'
+		}
+		else{
+			resultTag.innerHTML = '가능한 아이디입니다!<br> <img src=img/yes.jpeg width=300 height=200>'
+		}
+	}
+
+	function password() {
+		pw = document.getElementById("pw").value
+		pw2 = document.getElementById("pw2").value
+		resultTag = document.getElementById("result")
+		
+		if (pw.length==0) {
+			//alert('패스워드 다름')
+			//resultTag.innerHTML = '<b>로그인 성공</b>'
+			resultTag.innerHTML = '패스워드를 입력해주세요!<br> <img src=img/no.png width=300 height=200>'
+		}else if (pw !== pw2) {
+			//alert('패스워드 다름')
+			//resultTag.innerHTML = '<b>로그인 성공</b>'
+			resultTag.innerHTML = '패스워드가 다릅니다!<br> <img src=img/no.png width=300 height=200>'
+		} else {
+			//alert('패스워드 같음')
+			//resultTag.innerHTML = '<b>로그인 실패</b>'
+			resultTag.innerHTML = '패스워드가 같습니다<br> <img src=img/yes.jpeg width=300 height=200>'
+		}
+	}
+</script>
+
+</head>
+<body>
+	아이디 :
+	<input id="user">
+	<button onclick="idCheck()">아이디 체크</button>
+	<br> 
+	
+	
+	패스워드 :<input id="pw"><br> 
+	패스워드 재입력 :<input id="pw2">
+	<button onclick="password()">패스워드 체크</button><br>
+	
+
+
+
+	<hr color="red">
+	<div id="result"
+		style="color: red; background: yellow; width: 500px; height: 50px; font-size: 30px">결과넣는
+		곳.</div>
+</body>
+</html>
